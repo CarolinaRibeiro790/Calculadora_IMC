@@ -1,6 +1,8 @@
-import React, { useState } from "react"
-import { View, Text, TextInput, Button } from "react-native"
-import ResultImc from "./ResultImc/index/"
+import React, { useState } from "react";
+import { View, Text, TextInput, Button } from "react-native";
+import styles from "./style";
+import ResultImc from "./ResultImc/index/";
+
 
 //conteudo do Form
 export default function Form(){
@@ -29,7 +31,7 @@ function validationImc(){
 }
 
     return(
-        <View>
+        <View style={styles.textContext}>
             <View>
                 <Text>Altura</Text> 
                 <TextInput 
