@@ -35,13 +35,15 @@ function validationImc(){
                 <TextInput 
                 onChangeText={setHeight} 
                 value={heigth} 
-                placeholder="Ex. 1.75" keyboardType="numeric"></TextInput>
+                placeholder="Ex. 1.75" 
+                keyboardType="numeric"></TextInput>
 
                 <Text>Peso</Text>
                 <TextInput 
                 onChangeText={setWeight} 
                 value={weight} 
-                placeholder="Ex. 75.365" keyboardType="numeric"></TextInput>
+                placeholder="Ex. 75.365" 
+                keyboardType="numeric"></TextInput>
 
                 <Button 
                 onPress={() => validationImc()} 
