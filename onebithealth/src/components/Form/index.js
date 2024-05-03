@@ -48,10 +48,14 @@ function validationImc(){
                 value={weight} 
                 placeholder="Ex. 75.365" 
                 keyboardType="numeric"/>
-                <TouchableOpacity>
-                    onPress={() =>{
-                        validationImc()
+
+                <TouchableOpacity
+                style={styles.buttonCalculator}
+                onPress={() =>{
+                    validationImc()
                 }}
+                >
+                    <Text style={styles.textButtonCalculator}>{textButton}</Text>
                 </TouchableOpacity>
 
             </View>
