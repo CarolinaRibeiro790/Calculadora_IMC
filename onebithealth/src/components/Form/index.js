@@ -12,10 +12,17 @@ const [weight, setWeight] = useState(null);
 const [messageImc, setMessageImc] = useState("Preencha o peso e altura:");
 const [imc, setImc] = useState(null);
 const [textButton, setTextButton] = useState("Calcular");
+const [errorMessage, setErrorMessage] = useState(null);
 
 function imcCalculator(){
     return setImc((weight/(heigth*heigth)).toFixed(2));
 }
+function verificationImc(){
+    if(imc ==null){
+        setErrorMessage("Campo obrigatório!");
+    }
+}
+
 function validationImc(){
     if(weight != null && heigth != null){
         imcCalculator();
@@ -28,6 +35,7 @@ function validationImc(){
     setImc(null);
     setTextButton("Calcular");
     setMessageImc("Preencha o peso e altura");
+    setErrorMessage(null);
 }
 
     return(
