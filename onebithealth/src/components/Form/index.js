@@ -70,7 +70,7 @@ export default function Form() {
 
                 </Pressable>
                 :
-                <View>
+                <View style={styles.exhibitionResultImc}>
 
                     <ResultImc messageResultImc={messageImc}
                         resultImc={imc} />
