@@ -25,11 +25,6 @@ const styles = StyleSheet.create({
         color: "#FF0043",
         fontWeight: "bold",
     },
-    information:{
-        fontSize: 18,
-        color: "#FF0043",
-        fontWeight: "bold",
-    },
     boxSharebutton:{
         width: "100%", 
         alignItems: "center",
