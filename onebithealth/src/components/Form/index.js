@@ -6,7 +6,7 @@ import ResultImc from "./ResultImc/index/";
 
 //conteudo do Form
 export default function Form() {
-    /* Setou alguns states  para ajudar a controlar algumas informações dentro de algumas funções, variaveis*/
+    
     const [heigth, setHeight] = useState(null);
     const [weight, setWeight] = useState(null);
     const [messageImc, setMessageImc] = useState("Preencha o peso e altura:");
