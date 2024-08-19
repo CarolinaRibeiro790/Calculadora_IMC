@@ -3,8 +3,6 @@ import { View, Text, TextInput, TouchableOpacity, Vibration, Pressable, Keyboard
 import styles from "./style";
 import ResultImc from "./ResultImc/index/";
 
-
-//conteudo do Form
 export default function Form() {
     
     const [heigth, setHeight] = useState(null);
@@ -15,7 +13,6 @@ export default function Form() {
     const [errorMessage, setErrorMessage] = useState(null);
     const [imcList, setImcList] = useState ([])
 
-    /* Função para calcular o IMC*/
     function imcCalculator() {
         let heightFormat = heigth.replace(",", ".")
         let totalImc = ((weight / (heightFormat * heightFormat)).toFixed(2));
@@ -23,15 +20,13 @@ export default function Form() {
         setImc(totalImc)
     }
 
-    /* Função para verificar se os campos estão vazios, se sim chama a API vibrar*/
-
     function verificationImc() {
         if (imc == null) {
             Vibration.vibrate();
             setErrorMessage("Campo obrigatório*");
         }
     }
-    /* Função para verificar se os campos estão nulos se sim irá vibrar e mostrar um alerta*/
+
     function validationImc() {
         if (weight != null && heigth != null) {
             imcCalculator();
