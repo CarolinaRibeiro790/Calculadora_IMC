@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, Vibration, Pressable, Keyboard , FlatList } from "react-native";
 import styles from "./style";
-import ResultImc from "./ResultImc/index/";
+import ResultImc from "./ResultIMC";
 
 export default function Form() {
     
@@ -100,9 +100,8 @@ export default function Form() {
                     </Text>
                 )
             } }
-            keyExtractor={(item) => {
-                item.id;
-            }}
+            keyExtractor={(item) => item.id.toString()}
+
             >
 
             </FlatList>
