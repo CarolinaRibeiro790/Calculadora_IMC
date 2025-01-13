@@ -3,7 +3,7 @@
   Calculadora de IMC - Mobile
 </h1>
 
-## 🚀 Sobre o Projeto
+## 📱 Sobre o Projeto
 Este projeto é uma Calculadora de IMC (Índice de Massa Corporal) desenvolvida durante o curso de React Native da Onebithealth no YouTube. O objetivo foi aprender os fundamentos do React Native, incluindo a renderização de elementos na tela e a implementação de funcionalidades básicas de cálculo.
 
 ## 🛠️ Tecnologias Utilizadas
@@ -26,6 +26,7 @@ Durante o desenvolvimento deste projeto, foram explorados os seguintes conceitos
 <img src="https://github.com/user-attachments/assets/7eddc13b-14b3-4b33-b3a2-4cb30687587a" width="250" />
 <img src="https://github.com/user-attachments/assets/3ca80ce3-792b-41b0-9bf0-9a2b89bec610" width="250" />
 
-Para rodar o aplicativo, digitar no terminal:  
+## 📦 Como Rodar o Projeto
+Digitar no terminal:  
 `npm i` **(instala as dependências)**  
 `npx expo start` **(inicia o servidor do projeto)**
